@@ -1,0 +1,14 @@
+{
+  "resourceName": "MessagesTable",
+  "tableName": "MessagesTable",
+  "partitionKey": {
+    "fieldName": "chatId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "timestamp",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

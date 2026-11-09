@@ -1,0 +1,79 @@
+[
+      {
+        "id": "1",
+        "friendname": "Keren",
+        "profilepicture": "../assets/images/avatar1.jpg",
+        "songname": "Cosmic",
+        "artistname": "Bazzi",
+        "provider": "spotify",
+        "cover": "https://t2.genius.com/unsafe/450x0/https%3A%2F%2Fimages.genius.com%2F707e68a788df166155f2fb98490a6852.1000x1000x1.jpg",
+        "time": "2024-07-08T13:45:00",
+        "emoji": ""
+      },
+      {
+        "id": "2",
+        "friendname": "Bob",
+        "profilepicture": "bob_profile.jpg",
+        "songname": "Blinding Lights",
+        "artistname": "The Weeknd",
+        "provider": "apple",
+        "cover": "https://t2.genius.com/unsafe/225x0/https%3A%2F%2Fimages.genius.com%2Fbfe6bb7e4eb9a52a6afce6eb221bed2d.300x300x1.jpg",
+        "time": "2024-07-08T12:30:00",
+        "emoji": ""
+      },
+      {
+        "id": "3",
+        "friendname": "Charlie",
+        "profilepicture": "charlie_profile.jpg",
+        "songname": "Dance Monkey",
+        "artistname": "Tones and I",
+        "provider": "spotify",
+        "cover": "https://t2.genius.com/unsafe/510x510/https%3A%2F%2Fimages.genius.com%2Fd905536a56388be6becdef4a2b6a4b20.1000x1000x1.png",
+        "time": "2024-07-08T11:15:00",
+        "emoji": ""
+      },
+      {
+        "id": "4",
+        "friendname": "David",
+        "profilepicture": "david_profile.jpg",
+        "songname": "Someone Like You",
+        "artistname": "Adele",
+        "provider": "apple",
+        "cover": "https://t2.genius.com/unsafe/510x510/https%3A%2F%2Fimages.genius.com%2F48caff7f3cd18b4f4e9b2db1baf3d576.1000x1000x1.png",
+        "time": "2024-07-08T10:00:00",
+        "emoji": ""
+      },
+      {
+        "id": "5",
+        "friendname": "Hannah",
+        "profilepicture": "hannah_profile.jpg",
+        "songname": "Ozeba",
+        "artistname": "Rema",
+        "provider": "spotify",
+        "cover": "https://t2.genius.com/unsafe/510x510/https%3A%2F%2Fimages.genius.com%2F43943361f2d7301a229a57b7dac30ff8.1000x1000x1.png",
+        "time": "2024-07-07T16:15:00",
+         "emoji": ""
+      },
+      {
+        "id": "6",
+        "friendname": "Ian",
+        "profilepicture": "ian_profile.jpg",
+        "songname": "Rolling in the Deep",
+        "artistname": "Adele",
+        "provider": "spotify",
+        "cover": "https://t2.genius.com/unsafe/510x510/https%3A%2F%2Fimages.genius.com%2Fa9fa6bfb946e5ecde0d63fe20073d5c7.1000x1000x1.png",
+        "time": "2024-07-07T14:30:00",
+         "emoji": ""
+      },
+      {
+        "id": "7",
+        "friendname": "Jessica",
+        "profilepicture": "jessica_profile.jpg",
+        "songname": "Despacito",
+        "artistname": "Luis Fonsi ft. Daddy Yankee",
+        "provider": "apple",
+        "cover": "https://t2.genius.com/unsafe/510x510/https%3A%2F%2Fimages.genius.com%2Fd01f15b3cec316f3baef2fb637ef8305.1000x1000x1.jpg",
+        "time": "2024-07-07T12:45:00",
+         "emoji": ""
+      }
+]

@@ -1,0 +1,33 @@
+{
+  "resourceName": "Leagues",
+  "tableName": "Leagues",
+  "partitionKey": {
+    "fieldName": "leagueId",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "InviteTokenIndex",
+      "partitionKey": {
+        "fieldName": "inviteToken",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "leagueId",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "EndDateIndex",
+      "partitionKey": {
+        "fieldName": "endDate",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "leagueId",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

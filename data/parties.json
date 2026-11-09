@@ -1,0 +1,40 @@
+[
+    
+      {
+        "id": "1",
+        "hostname": "Alice",
+        "partyname": "Alice's Wonderland Party",
+        "hostavi": "https://i.pravatar.cc/150?u=tamimcdonald@genmy.com",
+        "public": true
+      },
+      {
+        "id": "2",
+        "hostname": "Bob",
+        "partyname": "Bob's Backyard BBQ",
+        "hostavi": "https://i.pravatar.cc/150?u=mccarthycarney@genmy.com",
+        "public": false
+      },
+      {
+        "id": "3",
+        "hostname": "Charlie",
+        "partyname": "Charlie's Chocolate Factory",
+        "hostavi": "https://i.pravatar.cc/150?u=colleenpowers@genmy.com",
+        "public": true
+      },
+      {
+        "id": "4",
+        "hostname": "Diana",
+        "partyname": "Diana's Dance Night",
+        "hostavi": "https://i.pravatar.cc/150?u=catherinemorse@genmy.com",
+        "public": false
+      },
+      {
+        "id": "5",
+        "hostname": "Eve",
+        "partyname": "Eve's Evening Extravaganza",
+        "hostavi": "https://i.pravatar.cc/150?u=rhodesforbes@genmy.com",
+        "public": true
+      }
+      
+
+]

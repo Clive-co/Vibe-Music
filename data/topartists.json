@@ -1,0 +1,52 @@
+[
+    {
+      "artistName": "The Weeknd",
+      "artistPicture": "https://images.genius.com/1bab7f9dbd1216febc16d73ae4da9bd0.1000x1000x1.jpg",
+      "timesPlayed": 150
+    },
+    {
+      "artistName": "Dua Lipa",
+      "artistPicture": "https://images.genius.com/61389eaee732280d0dc55ced88425893.1000x1000x1.jpg",
+      "timesPlayed": 140
+    },
+    {
+      "artistName": "Billie Eilish",
+      "artistPicture": "https://images.genius.com/2cc15177ee414ea72c739fe34b0348d5.1000x1000x1.png",
+      "timesPlayed": 130
+    },
+    {
+      "artistName": "Arya star",
+      "artistPicture": "https://images.genius.com/f91095cd930aa9abec40d7474df21013.613x613x1.jpg",
+      "timesPlayed": 120
+    },
+    {
+      "artistName": "Justin Bieber",
+      "artistPicture": "https://images.genius.com/8c95afb142e16e2e053b4384514dc339.938x938x1.png",
+      "timesPlayed": 110
+    },
+    {
+      "artistName": "Ariana Grande",
+      "artistPicture": "https://images.genius.com/8fae8e0677aaf539a7dde3b9793a10ca.1000x1000x1.jpg",
+      "timesPlayed": 100
+    },
+    {
+      "artistName": "Ed Sheeran",
+      "artistPicture": "https://images.genius.com/e61adb6350f274fda9c4b1fa73939e95.1000x1000x1.jpg",
+      "timesPlayed": 90
+    },
+    {
+      "artistName": "Drake",
+      "artistPicture": "https://images.genius.com/e175d17b0adb7a84c44f84a91da97c88.414x414x1.webp",
+      "timesPlayed": 80
+    },
+    {
+      "artistName": "Taylor Swift",
+      "artistPicture": "https://images.genius.com/df4a816f593b08bc8a361ad58a848640.1000x1000x1.jpg",
+      "timesPlayed": 70
+    },
+    {
+      "artistName": "Burna Boy",
+      "artistPicture": "https://images.genius.com/7af3374828b9ef22cc7373741880a597.1000x1000x1.jpg",
+      "timesPlayed": 60
+    }
+  ]

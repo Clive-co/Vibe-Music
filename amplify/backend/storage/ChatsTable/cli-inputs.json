@@ -1,0 +1,10 @@
+{
+  "resourceName": "ChatsTable",
+  "tableName": "ChatsTable",
+  "partitionKey": {
+    "fieldName": "chatId",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

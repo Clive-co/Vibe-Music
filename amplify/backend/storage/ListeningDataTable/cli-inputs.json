@@ -1,0 +1,14 @@
+{
+  "resourceName": "ListeningDataTable",
+  "tableName": "ListeningDataTable",
+  "partitionKey": {
+    "fieldName": "userId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "date",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

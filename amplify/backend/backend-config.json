@@ -1,0 +1,1842 @@
+{
+  "api": {
+    "vibeAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "addUser"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getUser"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "updateUser"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "searchUser"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getFriends"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "sendFriendRequests"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "acceptFriendRequest"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "removeFriend"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getRequests"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getHomeFriends"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getWeeklyRecap"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "deleteUser"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getPreSignedUrl"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "createLeague"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "addLeagueMembers"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getUserLeagues"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getLeagueLeaderboard"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getFriendsForLeague"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "recentChatsHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "chatHistoryHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "createGroupHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getChatByParticipant"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "createChat"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "leaveGroupHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "joinGroupHandler"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "updateFriend"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "getFriendDetails"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "deleteChat"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "vibe296c2905": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "acceptFriendRequest": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "addLeagueMembers": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "LeagueMemberships"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "addUser": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "chatHistoryHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "MessagesTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "chatHistoryWithUnreadHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "clearConcludedLeagues": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Leagues"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "connectHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ConnectionsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "contactSuggestions": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createChat": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ChatsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createGroupHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ChatsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "createLeague": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Leagues"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "dailyMusicDataDispatch": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "dailyMusicDataWorker": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ListeningDataTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "deleteChat": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "deleteUser": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "disconnectHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ConnectionsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getChatByParticipant": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ChatsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getFriendDetails": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getFriends": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getFriendsForLeague": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getFriendsOfFriends": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getHomeFriends": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getLastReadHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getLeagueLeaderboard": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Leaderboards"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getPreSignedUrl": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getRequests": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getUser": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getUserLeagues": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Leagues"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getUserRank": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "getWeeklyRecap": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "weeklyRecaps"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "joinGroupHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ChatsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "leaveGroupHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ChatsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "markRead": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "markReadHandler": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "messageHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "MessagesTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "recentChatsHandler": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "ChatsTable"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "removeFriend": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "searchUser": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "sendFriendRequests": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Friends"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateFriend": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateLeaderboardDispatch": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "LeagueMemberships"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateLeaderboardWorker": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "Leaderboards"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateLeagueDataDispatch": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "weeklyRecaps"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateLeagueDataWorker": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "weeklyRecaps"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "updateUser": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "websocketAuthorizer": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "weeklyRecapDispatch": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "user"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "weeklyRecapWorker": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "weeklyRecaps"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_acceptFriendRequest_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "acceptFriendRequest"
+        }
+      ]
+    },
+    "AMPLIFY_function_acceptFriendRequest_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "acceptFriendRequest"
+        }
+      ]
+    },
+    "AMPLIFY_function_addLeagueMembers_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "addLeagueMembers"
+        }
+      ]
+    },
+    "AMPLIFY_function_addLeagueMembers_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "addLeagueMembers"
+        }
+      ]
+    },
+    "AMPLIFY_function_addUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "addUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_addUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "addUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_chatHistoryHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "chatHistoryHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_chatHistoryHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "chatHistoryHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_chatHistoryWithUnreadHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "chatHistoryWithUnreadHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_chatHistoryWithUnreadHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "chatHistoryWithUnreadHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_clearConcludedLeagues_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "clearConcludedLeagues"
+        }
+      ]
+    },
+    "AMPLIFY_function_clearConcludedLeagues_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "clearConcludedLeagues"
+        }
+      ]
+    },
+    "AMPLIFY_function_connectHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "connectHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_connectHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "connectHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactSuggestions_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactSuggestions"
+        }
+      ]
+    },
+    "AMPLIFY_function_contactSuggestions_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contactSuggestions"
+        }
+      ]
+    },
+    "AMPLIFY_function_createChat_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createChat"
+        }
+      ]
+    },
+    "AMPLIFY_function_createChat_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createChat"
+        }
+      ]
+    },
+    "AMPLIFY_function_createGroupHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createGroupHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_createGroupHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createGroupHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_createLeague_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createLeague"
+        }
+      ]
+    },
+    "AMPLIFY_function_createLeague_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "createLeague"
+        }
+      ]
+    },
+    "AMPLIFY_function_dailyMusicDataDispatch_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyMusicDataDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_dailyMusicDataDispatch_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyMusicDataDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_dailyMusicDataWorker_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyMusicDataWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_dailyMusicDataWorker_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "dailyMusicDataWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_deleteChat_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "deleteChat"
+        }
+      ]
+    },
+    "AMPLIFY_function_deleteChat_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "deleteChat"
+        }
+      ]
+    },
+    "AMPLIFY_function_deleteUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "deleteUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_deleteUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "deleteUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_disconnectHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "disconnectHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_disconnectHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "disconnectHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_getChatByParticipant_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getChatByParticipant"
+        }
+      ]
+    },
+    "AMPLIFY_function_getChatByParticipant_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getChatByParticipant"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriendDetails_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriendDetails"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriendDetails_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriendDetails"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriendsForLeague_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriendsForLeague"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriendsForLeague_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriendsForLeague"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriendsOfFriends_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriendsOfFriends"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriendsOfFriends_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriendsOfFriends"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriends_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriends"
+        }
+      ]
+    },
+    "AMPLIFY_function_getFriends_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getFriends"
+        }
+      ]
+    },
+    "AMPLIFY_function_getHomeFriends_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getHomeFriends"
+        }
+      ]
+    },
+    "AMPLIFY_function_getHomeFriends_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getHomeFriends"
+        }
+      ]
+    },
+    "AMPLIFY_function_getLastReadHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getLastReadHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_getLastReadHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getLastReadHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_getLeagueLeaderboard_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getLeagueLeaderboard"
+        }
+      ]
+    },
+    "AMPLIFY_function_getLeagueLeaderboard_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getLeagueLeaderboard"
+        }
+      ]
+    },
+    "AMPLIFY_function_getPreSignedUrl_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getPreSignedUrl"
+        }
+      ]
+    },
+    "AMPLIFY_function_getPreSignedUrl_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getPreSignedUrl"
+        }
+      ]
+    },
+    "AMPLIFY_function_getRequests_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getRequests"
+        }
+      ]
+    },
+    "AMPLIFY_function_getRequests_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getRequests"
+        }
+      ]
+    },
+    "AMPLIFY_function_getUserLeagues_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getUserLeagues"
+        }
+      ]
+    },
+    "AMPLIFY_function_getUserLeagues_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getUserLeagues"
+        }
+      ]
+    },
+    "AMPLIFY_function_getUserRank_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getUserRank"
+        }
+      ]
+    },
+    "AMPLIFY_function_getUserRank_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getUserRank"
+        }
+      ]
+    },
+    "AMPLIFY_function_getUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_getUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_getWeeklyRecap_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getWeeklyRecap"
+        }
+      ]
+    },
+    "AMPLIFY_function_getWeeklyRecap_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "getWeeklyRecap"
+        }
+      ]
+    },
+    "AMPLIFY_function_joinGroupHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "joinGroupHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_joinGroupHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "joinGroupHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_leaveGroupHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "leaveGroupHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_leaveGroupHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "leaveGroupHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_markReadHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "markReadHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_markReadHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "markReadHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_markRead_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "markRead"
+        }
+      ]
+    },
+    "AMPLIFY_function_markRead_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "markRead"
+        }
+      ]
+    },
+    "AMPLIFY_function_messageHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "messageHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_messageHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "messageHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_recentChatsHandler_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "recentChatsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_recentChatsHandler_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "recentChatsHandler"
+        }
+      ]
+    },
+    "AMPLIFY_function_removeFriend_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "removeFriend"
+        }
+      ]
+    },
+    "AMPLIFY_function_removeFriend_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "removeFriend"
+        }
+      ]
+    },
+    "AMPLIFY_function_searchUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "searchUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_searchUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "searchUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_sendFriendRequests_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sendFriendRequests"
+        }
+      ]
+    },
+    "AMPLIFY_function_sendFriendRequests_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "sendFriendRequests"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateFriend_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateFriend"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateFriend_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateFriend"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeaderboardDispatch_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeaderboardDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeaderboardDispatch_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeaderboardDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeaderboardWorker_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeaderboardWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeaderboardWorker_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeaderboardWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeagueDataDispatch_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeagueDataDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeagueDataDispatch_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeagueDataDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeagueDataWorker_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeagueDataWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateLeagueDataWorker_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateLeagueDataWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateUser_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_updateUser_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "updateUser"
+        }
+      ]
+    },
+    "AMPLIFY_function_websocketAuthorizer_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "websocketAuthorizer"
+        }
+      ]
+    },
+    "AMPLIFY_function_websocketAuthorizer_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "websocketAuthorizer"
+        }
+      ]
+    },
+    "AMPLIFY_function_weeklyRecapDispatch_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weeklyRecapDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_weeklyRecapDispatch_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weeklyRecapDispatch"
+        }
+      ]
+    },
+    "AMPLIFY_function_weeklyRecapWorker_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weeklyRecapWorker"
+        }
+      ]
+    },
+    "AMPLIFY_function_weeklyRecapWorker_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weeklyRecapWorker"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "ChatsTable": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "ConnectionsTable": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "Friends": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "Leaderboards": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "LeagueMemberships": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "Leagues": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "ListeningDataTable": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "MessagesTable": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "chatMedia": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
+    },
+    "user": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    },
+    "weeklyRecaps": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

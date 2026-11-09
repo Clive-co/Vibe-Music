@@ -1,0 +1,37 @@
+[
+    {
+        "league_name": "Friends",
+        "rank": 2,
+        "type": "private"
+    },
+    {
+        "league_name": "Crackboys SupaLeague",
+        "rank": 7,
+        "type": "private"
+    },
+    {
+        "league_name": "TrenchTown Warriors",
+        "rank": 1,
+        "type": "private"
+    },
+    {
+        "league_name": "Vibe",
+        "rank": 24,
+        "type": "private"
+    },
+    {
+        "league_name": "Beat Munchers",
+        "rank": 9,
+        "type": "private"
+    },
+    {
+        "league_name": "Global League",
+        "rank": 639584,
+        "type": "public"
+    },
+    {
+        "league_name": "Nigeria",
+        "rank": 2794,
+        "type": "public"
+    }
+]

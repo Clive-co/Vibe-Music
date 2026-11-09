@@ -1,0 +1,231 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vibe-dev-abf76-authRole",
+      "UnauthRoleArn": "arn:aws:iam::354918407727:role/amplify-vibe-dev-abf76-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::354918407727:role/amplify-vibe-dev-abf76-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+      "UnauthRoleName": "amplify-vibe-dev-abf76-unauthRole",
+      "StackName": "amplify-vibe-dev-abf76",
+      "StackId": "arn:aws:cloudformation:us-east-1:354918407727:stack/amplify-vibe-dev-abf76/58e78ea0-24bb-11f0-917d-123d4565c421",
+      "AmplifyAppId": "d3iuywip3mbjai",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-vibe-dev-abf76-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "vibe296c2905": {}
+      },
+      "function": {
+        "acceptFriendRequest": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/acceptFriendRequest-777351616544434e6172-build.zip"
+        },
+        "addLeagueMembers": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/addLeagueMembers-69356c4b6a374949476f-build.zip"
+        },
+        "addUser": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/addUser-785433716b6d3337516c-build.zip"
+        },
+        "chatHistoryHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/chatHistoryHandler-7443504c4166394d5950-build.zip"
+        },
+        "chatHistoryWithUnreadHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/chatHistoryWithUnreadHandler-4d4d59714e7a466e5a32-build.zip"
+        },
+        "clearConcludedLeagues": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/clearConcludedLeagues-672f543367376c6b662b-build.zip"
+        },
+        "connectHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/connectHandler-7630466652796d786338-build.zip"
+        },
+        "createChat": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/createChat-2f41704469713331696a-build.zip"
+        },
+        "createGroupHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/createGroupHandler-4f587358384b784c4576-build.zip"
+        },
+        "createLeague": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/createLeague-4c37652f447145634e53-build.zip"
+        },
+        "dailyMusicDataDispatch": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/dailyMusicDataDispatch-754b50653856674b4c55-build.zip"
+        },
+        "dailyMusicDataWorker": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/dailyMusicDataWorker-485a684a78334f45716c-build.zip"
+        },
+        "deleteChat": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/deleteChat-3244746c6e3665585176-build.zip"
+        },
+        "deleteUser": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/deleteUser-41745150787633573254-build.zip"
+        },
+        "disconnectHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/disconnectHandler-626a307a535762394177-build.zip"
+        },
+        "getChatByParticipant": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getChatByParticipant-48696e7a667a692f614d-build.zip"
+        },
+        "getFriendDetails": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getFriendDetails-6d436835754332782f61-build.zip"
+        },
+        "getFriends": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getFriends-696a784e6e5a6b787443-build.zip"
+        },
+        "getFriendsForLeague": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getFriendsForLeague-464e52733969796c3655-build.zip"
+        },
+        "getFriendsOfFriends": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getFriendsOfFriends-4f71796e516e484a4c6c-build.zip"
+        },
+        "getHomeFriends": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getHomeFriends-704c66766746506d2b41-build.zip"
+        },
+        "getLastReadHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getLastReadHandler-6b377261722b7a6e3073-build.zip"
+        },
+        "getLeagueLeaderboard": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getLeagueLeaderboard-6c64766b4a4944373346-build.zip"
+        },
+        "getPreSignedUrl": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getPreSignedUrl-6b776e63586837676853-build.zip"
+        },
+        "getRequests": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getRequests-686c51434b57616a4276-build.zip"
+        },
+        "getUser": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getUser-59636e75433057394549-build.zip"
+        },
+        "getUserLeagues": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getUserLeagues-7036523772714f735433-build.zip"
+        },
+        "getUserRank": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getUserRank-43552f2f454f364c5759-build.zip"
+        },
+        "getWeeklyRecap": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/getWeeklyRecap-6d6a6772494c51442f48-build.zip"
+        },
+        "joinGroupHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/joinGroupHandler-54786d746f69484a7573-build.zip"
+        },
+        "leaveGroupHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/leaveGroupHandler-357235314f386b652f55-build.zip"
+        },
+        "markRead": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/markRead-58713045786678612f77-build.zip"
+        },
+        "markReadHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/markReadHandler-3966756b492b692b5177-build.zip"
+        },
+        "messageHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/messageHandler-547669394a4344646e79-build.zip"
+        },
+        "recentChatsHandler": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/recentChatsHandler-706c5547793049526755-build.zip"
+        },
+        "removeFriend": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/removeFriend-34626374304647784a78-build.zip"
+        },
+        "searchUser": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/searchUser-2f566972354b4b696535-build.zip"
+        },
+        "sendFriendRequests": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/sendFriendRequests-78706c4d4e535966562b-build.zip"
+        },
+        "updateFriend": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/updateFriend-7a4d4444514c38696d66-build.zip"
+        },
+        "updateLeaderboardDispatch": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/updateLeaderboardDispatch-793139675a762b473567-build.zip"
+        },
+        "updateLeaderboardWorker": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/updateLeaderboardWorker-61754e6a656d4d6e6459-build.zip"
+        },
+        "updateLeagueDataDispatch": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/updateLeagueDataDispatch-74556c5471384e474647-build.zip"
+        },
+        "updateLeagueDataWorker": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/updateLeagueDataWorker-6567566c675449524f68-build.zip"
+        },
+        "updateUser": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/updateUser-6e7870512f703834575a-build.zip"
+        },
+        "websocketAuthorizer": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/websocketAuthorizer-46705674694a5a624365-build.zip"
+        },
+        "weeklyRecapDispatch": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/weeklyRecapDispatch-5437622f786357754c45-build.zip"
+        },
+        "weeklyRecapWorker": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/weeklyRecapWorker-77644a2b59554a484b32-build.zip"
+        },
+        "contactSuggestions": {
+          "deploymentBucketName": "amplify-vibe-dev-abf76-deployment",
+          "s3Key": "amplify-builds/contactSuggestions-695a773049333957774d-build.zip"
+        }
+      },
+      "storage": {
+        "ChatsTable": {},
+        "ConnectionsTable": {},
+        "Friends": {},
+        "Leaderboards": {},
+        "LeagueMemberships": {},
+        "Leagues": {},
+        "ListeningDataTable": {},
+        "MessagesTable": {},
+        "chatMedia": {},
+        "user": {},
+        "weeklyRecaps": {}
+      },
+      "api": {
+        "vibeAPI": {}
+      }
+    }
+  }
+}

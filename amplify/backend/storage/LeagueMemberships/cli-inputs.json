@@ -1,0 +1,33 @@
+{
+  "resourceName": "LeagueMemberships",
+  "tableName": "LeagueMemberships",
+  "partitionKey": {
+    "fieldName": "leagueId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "userId",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "UserLeaguesIndex",
+      "partitionKey": {
+        "fieldName": "userId",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "leagueId",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "LastUpdatedWeekIndex",
+      "partitionKey": {
+        "fieldName": "lastUpdatedWeek",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

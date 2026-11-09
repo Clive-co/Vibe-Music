@@ -1,0 +1,10 @@
+{
+  "urlRandomness": "C7PRmKE",
+  "dev": true,
+  "minify": false,
+  "https": false,
+  "hostType": "lan",
+  "lanType": "ip",
+  "scheme": "com.android.frontend",
+  "devClient": false
+}

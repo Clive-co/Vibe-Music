@@ -1,0 +1,293 @@
+{
+  "version": 1,
+  "paths": {
+    "/addUser": {
+      "name": "/addUser",
+      "lambdaFunction": "addUser",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read"
+        ]
+      }
+    },
+    "/getUser": {
+      "name": "/getUser",
+      "lambdaFunction": "getUser",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/updateUser": {
+      "name": "/updateUser",
+      "lambdaFunction": "updateUser",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/users/search": {
+      "name": "/users/search",
+      "lambdaFunction": "searchUser",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/friends": {
+      "name": "/friends",
+      "lambdaFunction": "getFriends",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/friends/request": {
+      "name": "/friends/request",
+      "lambdaFunction": "sendFriendRequests",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/friends/accept": {
+      "name": "/friends/accept",
+      "lambdaFunction": "acceptFriendRequest",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/removeFriend": {
+      "name": "/removeFriend",
+      "lambdaFunction": "removeFriend",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/getRequests": {
+      "name": "/getRequests",
+      "lambdaFunction": "getRequests",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/getHomeFriends": {
+      "name": "/getHomeFriends",
+      "lambdaFunction": "getHomeFriends",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/getWeeklyRecap": {
+      "name": "/getWeeklyRecap",
+      "lambdaFunction": "getWeeklyRecap",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/deleteUser": {
+      "name": "/deleteUser",
+      "lambdaFunction": "deleteUser",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/getPreSignedURL": {
+      "name": "/getPreSignedURL",
+      "lambdaFunction": "getPreSignedUrl",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/createLeague": {
+      "name": "/createLeague",
+      "lambdaFunction": "createLeague",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/addLeagueMembers": {
+      "name": "/addLeagueMembers",
+      "lambdaFunction": "addLeagueMembers",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/getUserLeagues": {
+      "name": "/getUserLeagues",
+      "lambdaFunction": "getUserLeagues",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/getLeagueLeaderboard": {
+      "name": "/getLeagueLeaderboard",
+      "lambdaFunction": "getLeagueLeaderboard",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/getFriendsForLeague": {
+      "name": "/getFriendsForLeague",
+      "lambdaFunction": "getFriendsForLeague",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/recentChats": {
+      "name": "/recentChats",
+      "lambdaFunction": "recentChatsHandler",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/chatHistory": {
+      "name": "/chatHistory",
+      "lambdaFunction": "chatHistoryHandler",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    },
+    "/createGroup": {
+      "name": "/createGroup",
+      "lambdaFunction": "createGroupHandler",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update"
+        ]
+      }
+    },
+    "/getChatByParticipant": {
+      "name": "/getChatByParticipant",
+      "lambdaFunction": "getChatByParticipant",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/createChat": {
+      "name": "/createChat",
+      "lambdaFunction": "createChat",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/leaveGroup": {
+      "name": "/leaveGroup",
+      "lambdaFunction": "leaveGroupHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/addGroupMembers": {
+      "name": "/addGroupMembers",
+      "lambdaFunction": "joinGroupHandler",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/updateFriend": {
+      "name": "/updateFriend",
+      "lambdaFunction": "updateFriend",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/getFriendDetails": {
+      "name": "/getFriendDetails",
+      "lambdaFunction": "getFriendDetails",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/deleteChat": {
+      "name": "/deleteChat",
+      "lambdaFunction": "deleteChat",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

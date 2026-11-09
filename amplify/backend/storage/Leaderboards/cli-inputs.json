@@ -1,0 +1,14 @@
+{
+  "resourceName": "Leaderboards",
+  "tableName": "Leaderboards",
+  "partitionKey": {
+    "fieldName": "leagueId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "rank",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

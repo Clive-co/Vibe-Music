@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "type": "sent",
+        "userName": "Pluto_boy",
+        "img": "https://i.pravatar.cc/150?u=wardsims@genmy.com"
+    },
+    {
+        "id": 1,
+        "type": "received",
+        "userName": "Jensen",
+        "img": "https://i.pravatar.cc/150?u=saundralott@genmy.com"
+    },
+    {
+        "id": 2,
+        "type": "received",
+        "userName": "Tony",
+        "img": "https://i.pravatar.cc/150?u=annmariesimpson@genmy.com"
+    },
+    {
+        "id": 3,
+        "type": "sent",
+        "userName": "Frank",
+        "img": "https://i.pravatar.cc/150?u=shelbyraymond@genmy.com"
+    },
+    {
+        "id": 4,
+        "type": "received",
+        "userName": "Linda",
+        "img": "https://i.pravatar.cc/150?u=warrenmendez@genmy.com"
+    },
+    {
+        "id": 5,
+        "type": "sent",
+        "userName": "Keren",
+        "img": "https://i.pravatar.cc/150?u=hamptonbuckley@genmy.com"
+    },
+    {
+        "id": 6,
+        "type": "received",
+        "userName": "Rita",
+        "img": "https://i.pravatar.cc/150?u=connievinson@genmy.com"
+    }
+]

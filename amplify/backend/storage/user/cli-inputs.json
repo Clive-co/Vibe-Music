@@ -1,0 +1,22 @@
+{
+  "resourceName": "user",
+  "tableName": "user",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "linkedAccount",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "UsernameIndex",
+      "partitionKey": {
+        "fieldName": "username",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}

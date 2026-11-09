@@ -1,0 +1,13 @@
+{
+  "resourceName": "chatMedia",
+  "policyUUID": "7dd3b368",
+  "bucketName": "media",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}

@@ -1,0 +1,37 @@
+{
+  "resourceName": "Friends",
+  "tableName": "Friends",
+  "partitionKey": {
+    "fieldName": "userId",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "friendId",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "RequestTypeIndex",
+      "partitionKey": {
+        "fieldName": "requestType",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "relationshipStatus",
+        "fieldType": "string"
+      }
+    },
+    {
+      "name": "UserStatusIndex",
+      "partitionKey": {
+        "fieldName": "userId",
+        "fieldType": "string"
+      },
+      "sortKey": {
+        "fieldName": "relationshipStatus",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": []
+}
