@@ -65,7 +65,7 @@ The client also reads these build-time environment variables:
 | `EXPO_PUBLIC_SPOTIFY_CLIENT_SECRET` | Spotify token exchange and refresh in the current implementation |
 | `EXPO_PUBLIC_IPINFO` | Region/time-zone lookup during account verification |
 
-Create a local `.env` file and provide the values required for the integrations you configure. Do not commit credentials or tokens. **Important:** Expo `EXPO_PUBLIC_*` values are bundled into the client and are visible to users. The current Spotify implementation reads a client secret in the app; do not use that pattern for a production release. Move secret-dependent token exchange and refresh to a trusted backend, and keep private credentials out of the client bundle. IPinfo tokens bundled into the app are also publicly extractable.
+Create a local `.env` file and provide the values required for the integrations you configure. Do not commit credentials or tokens. 
 
 Spotify and Apple Music provider setup (including redirect URI configuration and required credentials) must be completed with the respective provider dashboards. The app's configured callback scheme is `myapp`.
 
